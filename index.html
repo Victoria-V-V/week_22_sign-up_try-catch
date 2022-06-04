@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        Уже есть аккаунт на Яндексе? &nbsp;
+        <a
+            href="https://passport.yandex.ru/auth?origin=home_desktop_ru&retpath=https%3A%2F%2Fmail.yandex.ru%2F&process_uuid=f478dce6-24b6-4e3a-9df4-a6fb450fe19b">Войти</a>
+    </header>
+
+    <main class="registration__wrapper">
+        <div class="registration__block">
+            <div class="registration__header">Регистрация</div>
+            <div class="errorsInfo"></div>
+            <form action="#" class="registration__form" method="POST">
+
+                <input type="text" name="firstName" id="InputFirstName" class="form__field" placeholder="Имя" required>
+                <div id="errowMessageFirstName"></div>
+
+                <input type="text" name="surName" id="InputSurName" class="form__field" placeholder="Фамилия" required>
+                <div id="errowMessageSurName"></div>
+
+                <input type="text" name="login" id="InputLogin" class="form__field" placeholder="Логин" required>
+                <div id="errowMessagelogin"></div>
+
+                <input type="password" name="password" id="InputPassword" class="form__field"
+                    placeholder="Придумайте пароль" required>
+                <div id="errowMessagePassword"></div>
+
+                <input type="password" name="passwordRepeat" id="InputPasswordRepeat" class="form__field"
+                    placeholder="Повторите пароль" required>
+                <div id="errowMessagePasswordRepeat"></div>
+
+                <input type="tel" name="tel" id="InputTel" class="form__field" placeholder="Номер мобильного телефона"
+                    required>
+                <div id="errowMessageTel"></div>
+
+                <div id="errowMessageSendForm"></div>
+                <button type="button" class="registration__button">Зарегистрироваться</button>
+
+                <div class="sign">
+                    <p class="sign__text"> Нажимая кнопку «Зарегистрироваться»:</p>
+                    <div class="sign__userAgreement">
+                        <input type="checkbox" id="userAgreement" value="check" checked="checked">
+                        <div>
+                            Я принимаю условия
+                            <a href="https://yandex.ru/legal/rules/">Пользовательского соглашения</a>
+                            и даю своё согласие Яндексу на обработку моей персональной
+                            информации
+                            на
+                            условиях, определенных
+                            <a href="https://yandex.ru/legal/confidential/">Политикой конфиденциальности.</a>
+                        </div>
+                    </div>
+
+                    <div class="sign__ads">
+                        <input type="checkbox" name="userAds" value="check" checked="checked">Я не хочу получать
+                        рекламу и другие предложения данного сервиса Яндекса
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li><a href="https://yandex.ru/support/passport/">Справка</a></li>
+                <li><a href="https://yandex.ru/support/passport/feedback.html">Обратная
+                        связь</a></li>
+                <li>&copy; 2001-2022, <a href="https://yandex.ru/">Яндекс</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./assets/scripts/index.js"></script>
+</body>
+
+</html>
